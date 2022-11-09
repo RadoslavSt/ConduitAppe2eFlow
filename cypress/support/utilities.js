@@ -21,3 +21,9 @@ export const createArticle = (inputs, datas)=>{
   })
 }
 
+export const createArticle2 = (inputs,datas)=>{
+  inputs.each((input,index)=>{
+    cy.wrap(input).clear().type(datas[index])
+  })
+}
+
