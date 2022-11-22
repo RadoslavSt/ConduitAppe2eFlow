@@ -20,8 +20,8 @@ describe("Edit Article", () => {
       "https://api.realworld.io/api/articles/**",
       (editArticle) => {
         console.log(editArticle);
-        editArticle.body.article.author.body = "Edited text with PUT method";
-        editArticle.body.article.author.description =
+        editArticle.body.article.body = "Edited text with PUT method";
+        editArticle.body.article.description =
           "Edited About with PUT method";
         editArticle.body.article.title =
           result + " Edited Title with PUT method";

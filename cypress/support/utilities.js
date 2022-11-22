@@ -9,7 +9,7 @@ export const HeaderValidation = (datass, expectedNavItem) => {
 
 export const typeCredentials=(inputs, credentials)=>{
   inputs.each((input,index)=>{
-    console.log(input)
+   // console.log(input)
     cy.wrap(input).type(credentials[index])
     
   })
